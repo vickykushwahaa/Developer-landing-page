@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    line-height: 1.4;
+    font-weight: 300;
+}
+.hero_Section{
+    background-image: url(images/developer.png);
+    min-height: 100vb;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 5px 10px;
+}
+.text_container{
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 64px;
+    padding-left: 16px;
+}
+.lg_text{
+    font-size: 53px;
+    font-weight: 400;
+}
+.second-section{
+    background-color: hsl(0, 3%, 6%);
+    color: white;
+}
+.text_style{
+    text-align: center;
+    font-weight: 400;
+}
+.work{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    margin: 20px 0px;
+    gap: 20px;
+}
+.grid_item{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.card{
+    max-width: 320px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px #000;
+    transition: 0.2s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.08);
+    box-shadow: 3px 5px 5px #000;
+    transition: 0.2 ease-in-out;
+
+}
+.card_container{
+    padding: 20px;
+}
+.card_container h3{
+    padding-bottom: 10px;
+}
+.bottom_section{
+    display: flex;
+}
+.about_me{
+   background-color:rgb(25, 58, 25);
+   color: white;
+   padding: 10px 15px 15px 20px;
+   border-radius: 10px;
+   margin: 5px 56px 10px 90px;
+}
+.contect_me{
+   background-color: rgb(35, 3, 3);
+   color: white;
+   padding: 10px 15px 15px 20px;
+   border-radius: 10px;
+   margin: 5px 56px 10px 90px;
+}
+.footer_section{
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+@media (max-width: 786px) {
+    .hero_Section{
+        min-height: 50vh;
+    }
+    .text_container{
+        padding: 55px 5px;
+        text-align: center;
+    }
+    .lg_text{
+        font-size: 25px;
+    }
+}
